@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
 
-int findMax(const std::vector<int>& list) {
-    int max = list[0];
+int findMin(const std::vector<int>& list) {
+    int min = list[0];
     for (int i = 1; i < list.size(); i++) {
-        if (list[i] > max) {
-            max = list[i];
+        if (list[i] < min) {
+            min = list[i];
         }
     }
-    return max;
+    return min;
 }
 
 int main() {
@@ -22,6 +22,6 @@ int main() {
         std::cin >> numbers[i];
     }
     
-    std::cout << "Maximum: " << findMax(numbers) << std::endl;
+    std::cout << "Minimum: " << findMin(numbers) << std::endl;
     return 0;
 }
