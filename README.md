@@ -1,2 +1,2 @@
-# Max Finder Project
-findMax() - finds the maximum element in a vector
+# Min Finder Project
+findMin() - finds the minimum element in a vector
